@@ -46,6 +46,8 @@ a {
 
 .container {
     padding: 60px 140px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 /* Navbar */
