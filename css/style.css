@@ -189,10 +189,6 @@ header h2 {
     text-decoration: none;
 }
 
-.isotopeFilters a:hover {
-    text-decoration: none;
-}
-
 img {
 /*    margin:5px;*/
 }
@@ -260,4 +256,25 @@ img {
     #aboutMe {
         padding: 60px 20px;
     }
+
+    /* make project descriptions click-friendly for touch-phones */
+    
+    .caption:active .caption__overlay {
+    transform: translateY(0);
+    }
+
+    .caption::active {
+        content: ' ';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: transparent;
+        transition: background .35s ease-out;
+    }
+    .caption:active::before {
+        background: rgba(0, 0, 0, .7);
+}
+
 }
