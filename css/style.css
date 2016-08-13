@@ -256,4 +256,8 @@ img {
     .container {
         padding: 60px 20px;
     }
+
+    #aboutMe {
+    padding: 60px 20px;
+}
 }
