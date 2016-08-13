@@ -46,8 +46,6 @@ a {
 
 .container {
     padding: 60px 140px;
-    margin-right: auto;
-    margin-left: auto;
 }
 
 /* Navbar */
@@ -251,4 +249,11 @@ img {
     0% { opacity:1; }
     50% { opacity:0; }
     100% { opacity:1; }
+}
+
+/* CSS code for smaller screens (ie. phone) */
+@media (max-width: 767px) {
+    .container {
+        padding: 60px 20px;
+    }
 }
