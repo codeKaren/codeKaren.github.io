@@ -17,7 +17,7 @@ html, body {
 }
 
 .background-img {
-    background-image: url('../img/ocean.JPG');
+    background-image: url('../img/ocean.jpg');
     background-size: cover;
 }
 
