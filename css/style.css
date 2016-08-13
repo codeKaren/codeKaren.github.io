@@ -258,12 +258,12 @@ img {
     }
 
     /* make project descriptions click-friendly for touch-phones */
-    
-    .caption:active .caption__overlay {
+
+    .caption:active .caption__overlay, .caption:focus .caption__overlay {
     transform: translateY(0);
     }
 
-    .caption::active {
+    .caption::before {
         content: ' ';
         position: absolute;
         top: 0;
@@ -273,7 +273,7 @@ img {
         background: transparent;
         transition: background .35s ease-out;
     }
-    .caption:active::before {
+    .caption:active::before, .caption:focus::before {
         background: rgba(0, 0, 0, .7);
 }
 
