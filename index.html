@@ -153,11 +153,11 @@
             </span>
             </li>
           <li>
-            <span class = "skill-title"> MATLAB / Octave </span>
+            <span class = "skill-title"> MATLAB </span>
             <span class = "skill-rating">
               <span class = "glyphicon glyphicon-star"></span>
               <span class = "glyphicon glyphicon-star"></span>
-              <span class = "glyphicon glyphicon-star"></span>
+              <span class = "glyphicon glyphicon-star-empty"></span>
               <span class = "glyphicon glyphicon-star-empty"></span>
               <span class = "glyphicon glyphicon-star-empty"></span>
             </span>
@@ -177,7 +177,7 @@
             </span>
           </li>
           <li>
-            <span class = "skill-title"> HTML / CSS </span>
+            <span class = "skill-title"> HTML/CSS </span>
             <span class = "skill-rating">
               <span class = "glyphicon glyphicon-star"></span>
               <span class = "glyphicon glyphicon-star"></span>
@@ -415,7 +415,7 @@
           </div>
         </div>
         <h3>Research</h3>
-         <div class = "row">
+         <div class = "row" id = "research">
           <div class = "col-md-4">
           <h4>Neurovascular Imaging Research Core</h4>
           <p> <span class = "glyphicon glyphicon-user"> </span> Dr. Fabien Scalzo </p>
@@ -424,7 +424,7 @@
           </div>
           <div class = "col-md-8">
           <h4>Undergraduate Researcher</h4>
-          <p> Develop an original RL system, in the context of time-series forecasting, to learn an optimal interaction/trading strategy to maximize the reward of the simulated RL agent. Through experiments, the bitcoin time-series is used retrospectively to evaluate the effectiveness of the learned policies. The project is being implemented using Python, the Maja Machine Learning Framework, and scikit-learn.
+          <p> Develop an original RL system, in the context of time-series forecasting, to learn an optimal interaction/trading strategy to maximize the reward of the simulated RL agent. Through experiments, the Bitcoin time-series is used retrospectively to evaluate the effectiveness of the learned policies. The project is being implemented using Python, the Maja Machine Learning Framework, and scikit-learn.
           </p>
           </div>
         </div>
@@ -487,11 +487,13 @@
         <a href="#" data-filter=".cpp">C++</a>  ||
         <a href="#" data-filter=".c">C</a>  ||   
         <a href="#" data-filter=".python">Python</a>  ||
-        <a href="#" data-filter=".octave">Octave/MATLAB</a>  || 
+        <a href="#" data-filter=".javascript">JavaScript</a>  ||
+        <a href="#" data-filter=".octave">MATLAB</a>  || 
         <a href="#" data-filter=".html">HTML/CSS</a>  
         </p>
         <p> <b> Filter by Topic: </b>
-        <a href="#" data-filter=".ml">Machine Learning</a>  || 
+        <a href="#" data-filter=".ml">Machine Learning</a>  ||
+        <a href="#" data-filter=".games">Games</a> || 
         <a href="#" data-filter=".webdev">Web Dev</a> ||
         <a href="#" data-filter=".hardware">Hardware-Integrated</a> ||
         <a href="#" data-filter=".softwareonly">Software-Only</a>
@@ -499,6 +501,48 @@
       </div>
       </div>
         <div class = "row isotopeContainer">
+          <div class = "col-lg-4 col-md-6 col-sm-12 col-xs-12 isotopeSelector c softwareonly">
+            <figure class = "caption">
+              <img src = "img/shell.png" class = "img-responsive img-rounded center-block caption__media" alt = "Terminal shell icon">
+              <div class = "caption__overlay">
+                <figcaption class = "caption__overlay__content">
+                <h4>Simpleton Shell</h4>
+                <p> A simple, stripped down shell that takes in as command line arguments which files to access, which pipes to create, and which subcommands to invoke. Child processes are spawned to run the subcommands and their exit statuses reported. </p> 
+                <p> <span class = "glyphicon glyphicon-tag"> </span> 
+                C</p>
+                </figcaption>
+              </div>
+            </figure>
+          <h4 id = "outer-caption"> <a href = "https://github.com/codeKaren/CS-111/tree/master/Lab%201/Lab%201C" target = "_blank">Simpleton Shell</a> </h4>
+          </div>  
+          <div class = "col-lg-4 col-md-6 col-sm-12 col-xs-12 isotopeSelector javascript html games softwareonly">
+            <figure class = "caption">
+              <img src = "img/rainbowRunner.png" class = "img-responsive img-rounded center-block caption__media" alt = "Rainbow Runner video game screen in Mario mode">
+              <div class = "caption__overlay">
+                <figcaption class = "caption__overlay__content">
+                <h4>Rainbow Runner</h4>
+                <p> A vertically scrolling game where the player must dodge cubes while navigating through a Rainbow Road or Super Mario themed world. All computer graphics and game logic written completely from scratch, using JavaScript and WebGL. </p> 
+                <p> <span class = "glyphicon glyphicon-tag"> </span> 
+                JavaScript, HTML/CSS, Games</p>
+                </figcaption>
+              </div>
+            </figure>
+          <h4 id = "outer-caption"> <a href = "https://ucla-wi17-cs174a.github.io/project-group05/" target = "_blank"> Rainbow Runner </a> </h4>
+          </div>  
+          <div class = "col-lg-4 col-md-6 col-sm-12 col-xs-12 isotopeSelector python ml softwareonly">
+            <figure class = "caption">
+              <img src = "img/RLtrading.jpg" class = "img-responsive img-rounded center-block caption__media" alt = "Graph of Bitcoin prices over time">
+              <div class = "caption__overlay">
+                <figcaption class = "caption__overlay__content">
+                <h4>RL Trading</h4>
+                <p> A reinforcement learning (RL) agent that uses the Bitcoin price time series to learn the optimal policy for trading. Research project supervised by Dr. Fabien Scalzo at UCLA and implemented in Python on top of the Maja Machine Learning Framework and scikit-learn. </p> 
+                <p> <span class = "glyphicon glyphicon-tag"> </span> 
+                Python, ML</p>
+                </figcaption>
+              </div>
+            </figure>
+          <h4 id = "outer-caption"> <a href = "#research" target = "_blank"> RL Trading</a> </h4>
+          </div> 
           <div class = "col-lg-4 col-md-6 col-sm-12 col-xs-12 isotopeSelector cpp softwareonly">
             <figure class = "caption">
               <img src = "img/CyberSpider.png" class = "img-responsive img-rounded center-block caption__media" alt = "Cyber Spider program">
@@ -527,20 +571,20 @@
             </figure>
           <h4 id = "outer-caption"> <a href = "https://github.com/codeKaren/NeuralNetwork" target = "_blank"> Handwritten Digit Recognition </a> </h4>
           </div>   
-          <div class = "col-lg-4 col-md-6 col-sm-12 col-xs-12 isotopeSelector html webdev softwareonly">
+          <div class = "col-lg-4 col-md-6 col-sm-12 col-xs-12 isotopeSelector cpp games softwareonly">
             <figure class = "caption">
-              <img src = "img/website.png" class = "img-responsive img-rounded center-block caption__media" alt = "Personal website landing page">
+              <img src = "img/Frackman.png" class = "img-responsive img-rounded center-block caption__media" alt = "Frackman video game">
               <div class = "caption__overlay">
                 <figcaption class = "caption__overlay__content">
-                <h4>Personal Website</h4>
-                <p> A place for me to display the information on my resume and my projects in greater detail. I learned HTML, CSS, Bootstrap, and how to integrate Javascript into a webpage while developing this website.</p> 
+                <h4>Frackman</h4>
+                <p> A 2D arcade-style game where the player, Frackman, tries to find all of the oil barrels on each level, while bribing the angry protestors who are following him with gold nuggets or shooting them with water squirts. This was my first intensive CS project.</p> 
                 <p> <span class = "glyphicon glyphicon-tag"> </span> 
-                HTML/CSS, Web Dev</p>
+                C++, Games</p>
                 </figcaption>
               </div>
             </figure>
-          <h4 id = "outer-caption"> <a href = "https://github.com/codeKaren/codeKaren.github.io" target = "_blank">Personal Website</a></h4>
-          </div>  
+          <h4 id = "outer-caption"> <a href = "https://github.com/codeKaren/FrackMan" target = "_blank">Frackman</a> </h4>
+          </div> 
           <div class = "col-lg-4 col-md-6 col-sm-12 col-xs-12 isotopeSelector python softwareonly">
             <figure class = "caption">
               <img src = "img/email.png" class = "img-responsive img-rounded center-block caption__media" alt = "Sponsorship email automation script">
@@ -569,105 +613,20 @@
             </figure>
           <h4 id = "outer-caption"> <a href = "https://github.com/tanya-al/OPS_Capstone" target = "_blank">Autonomous Line-Sensing Car </a></h4>
           </div>        
-          <div class = "col-lg-4 col-md-6 col-sm-12 col-xs-12 isotopeSelector cpp softwareonly">
+          <div class = "col-lg-4 col-md-6 col-sm-12 col-xs-12 isotopeSelector html webdev softwareonly">
             <figure class = "caption">
-              <img src = "img/Frackman.png" class = "img-responsive img-rounded center-block caption__media" alt = "Frackman video game">
+              <img src = "img/website.png" class = "img-responsive img-rounded center-block caption__media" alt = "Personal website landing page">
               <div class = "caption__overlay">
                 <figcaption class = "caption__overlay__content">
-                <h4>Frackman</h4>
-                <p> A 2D arcade-style game where the player, Frackman, tries to find all of the oil barrels on each level, while bribing the angry protestors who are following him with gold nuggets or shooting them with water squirts. This was my first intensive CS project.</p> 
+                <h4>Personal Website</h4>
+                <p> A place for me to display the information on my resume and my projects in greater detail. I learned HTML, CSS, Bootstrap, and how to integrate Javascript into a webpage while developing this website.</p> 
                 <p> <span class = "glyphicon glyphicon-tag"> </span> 
-                C++</p>
+                HTML/CSS, Web Dev</p>
                 </figcaption>
               </div>
             </figure>
-          <h4 id = "outer-caption"> <a href = "https://github.com/codeKaren/FrackMan" target = "_blank">Frackman</a> </h4>
-          </div>
-          <div class = "col-lg-4 col-md-6 col-sm-12 col-xs-12 isotopeSelector c hardware">
-            <figure class = "caption">
-              <img src = "img/robotCar.png" class = "img-responsive img-rounded center-block caption__media" alt = "IoT Intel Edison robot car">
-              <div class = "caption__overlay">
-                <figcaption class = "caption__overlay__content">
-                <h4>IoT Robot Car</h4>
-                <p> A robot car controlled by an Intel Edison using secure IoT coordination systems. I assembled the car out of LEGOs and mechanical parts, soldered the circuit to power the motor and Edison board, and implemented C code that controls the motion of the car.</p> 
-                <p> <span class = "glyphicon glyphicon-tag"> </span> 
-                C, Hardware</p>
-                </figcaption>
-              </div>
-            </figure>
-          <h4 id = "outer-caption">IoT Robot Car</h4>
-          </div>   
-          <div class = "col-lg-4 col-md-6 col-sm-12 col-xs-12 isotopeSelector octave ml softwareonly">
-            <figure class = "caption">
-              <img src = "img/Kmeans.png" class = "img-responsive img-rounded center-block caption__media" alt = "K-Means Clustering Algorithm and PCA">
-              <div class = "caption__overlay">
-                <figcaption class = "caption__overlay__content">
-                <h4>K-Means Clustering and PCA</h4>
-                <p> An implementation of the K-Means clustering algorithm to compress an image. I also compressed images using principal component analysis (PCA) to find low-dimensional representations of face images.</p> 
-                <p> <span class = "glyphicon glyphicon-tag"> </span> 
-                Octave/MATLAB, ML</p>
-                </figcaption>
-              </div>
-            </figure>
-          <h4 id = "outer-caption"> <a href = "https://github.com/codeKaren/K-Means-PCA" target = "_blank">K-Means Clustering and PCA</a> </h4>
-          </div>
-          <div class = "col-lg-4 col-md-6 col-sm-12 col-xs-12 isotopeSelector octave ml softwareonly">
-            <figure class = "caption">
-              <img src = "img/anomaly.png" class = "img-responsive img-rounded center-block caption__media" alt = "Anomaly detection system and recommender system">
-              <div class = "caption__overlay">
-                <figcaption class = "caption__overlay__content">
-                <h4>Anomaly/Recommender Systems</h4>
-                <p> An implementation of the anomaly detection algorithm to detect failing servers on a network. I also implemented a recommender system for movies using collaborative filtering.</p> 
-                <p> <span class = "glyphicon glyphicon-tag"> </span> 
-                Octave/MATLAB, ML</p>
-                </figcaption>
-              </div>
-            </figure>
-          <h4 id = "outer-caption"> <a href = "https://github.com/codeKaren/Anomaly-Recommender" target = "_blank">Anomalies and Recommenders</a> </h4>
-          </div>
-          <div class = "col-lg-4 col-md-6 col-sm-12 col-xs-12 isotopeSelector octave ml softwareonly">
-            <figure class = "caption">
-              <img src = "img/costLinearReg.png" class = "img-responsive img-rounded center-block caption__media" alt = "Linear regression">
-              <div class = "caption__overlay">
-                <figcaption class = "caption__overlay__content">
-                <h4>Linear Regression</h4>
-                <p> An implementation of multivariate linear regression with feature normalization to predict housing prices. This was my first machine learning project, and I used both gradient descent and the normal equation to optimize the parameters, theta.</p> 
-                <p> <span class = "glyphicon glyphicon-tag"> </span> 
-                Octave/MATLAB, ML</p>
-                </figcaption>
-              </div>
-            </figure>
-          <h4 id = "outer-caption"> <a href = "https://github.com/codeKaren/LinearRegression" target = "_blank">Linear Regression</a> </h4>
-          </div>    
-          <div class = "col-lg-4 col-md-6 col-sm-12 col-xs-12 isotopeSelector octave ml softwareonly">
-            <figure class = "caption">
-              <img src = "img/logisticReg.png" class = "img-responsive img-rounded center-block caption__media" alt = "Logistic regression">
-              <div class = "caption__overlay">
-                <figcaption class = "caption__overlay__content">
-                <h4>Logistic Regression</h4>
-                <p> An implementation of regularized logistic regression used to predict whether microchips from a fabrication plant pass quality assurance. I used fminunc to learn the optimal parameters, theta. </p> 
-                <p> <span class = "glyphicon glyphicon-tag"> </span> 
-                Octave/MATLAB, ML</p>
-                </figcaption>
-              </div>
-            </figure>
-          <h4 id = "outer-caption"> <a href = "https://github.com/codeKaren/LogisticRegression" target = "_blank">Logistic Regression</a> </h4>
-          </div>    
-          <div class = "col-lg-4 col-md-6 col-sm-12 col-xs-12 isotopeSelector octave ml softwareonly">
-            <figure class = "caption">
-              <img src = "img/biasVariance.png" class = "img-responsive img-rounded center-block caption__media" alt = "Linear regression bias vs. variance analysis">
-              <div class = "caption__overlay">
-                <figcaption class = "caption__overlay__content">
-                <h4>Bias vs. Variance Analysis</h4>
-                <p> An implementation of regularized linear regression used to plot training and test errors on a learning curve to diagnose bias-variance problems. I learned how to debug my machine learning algorithms through this project.</p> 
-                <p> <span class = "glyphicon glyphicon-tag"> </span> 
-                Octave/MATLAB, ML</p>
-                </figcaption>
-              </div>  
-            </figure>
-          <h4 id = "outer-caption"> <a href = "https://github.com/codeKaren/BiasVariance" target = "_blank"> Bias vs. Variance Analysis </a> </h4>
-          </div>      
-        </div>
+          <h4 id = "outer-caption"> <a href = "https://github.com/codeKaren/codeKaren.github.io" target = "_blank">Personal Website</a></h4>
+          </div>  
       </div>
     </div>     
 
