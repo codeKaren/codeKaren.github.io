@@ -1,5 +1,11 @@
+/* Font selection */
+
 html, body {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Raleway', sans-serif;
 }
 
 /* General Formatting for Website */
